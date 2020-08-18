@@ -89,7 +89,7 @@ a {
   margin: 1em 0em 0em 0em;
   border: solid 1px;
   border-color:rgb(204, 204, 204);
-  opacity: 20%;
+  opacity: 0.8;
 }
 
 .project-card-container {
