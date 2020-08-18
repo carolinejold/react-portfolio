@@ -11,7 +11,7 @@ const About = () => {
             </Fade>
             <Fade bottom>
                 <div className="about-container2">
-                    <img className="face" src={Face} />
+                    <img className="face" src={Face} alt="my face" />
                     <h4>Caroline Old</h4>
                     <p>26. Scottish. Stockholm</p>
                     <p>Graduated with Law LLB (Hons) degree, background in digital marketing.</p>
