@@ -31,9 +31,9 @@ class Projects extends React.Component {
                             <Card className="project-card" id={project.id} key={project.id} style={{ width: '18rem' }}>
                                 <Card.Body>
                                     <Card.Title><h4><a href={project.html_url} target="_blank" rel="noopener noreferrer">{project.name}</a></h4></Card.Title>
-                                    <Card.Subtitle>Last updated: {project.updated_at}</Card.Subtitle>
+                                    <Card.Subtitle className="subtitle">Last updated: {project.updated_at}</Card.Subtitle>
                                     <Card.Text>{project.description}</Card.Text>
-                                    <Card.Link href={project.html_url} target="_blank" rel="noopener noreferrer">View on Github</Card.Link>
+                                    <Card.Link className="github-link" href={project.html_url} target="_blank" rel="noopener noreferrer">View on Github</Card.Link>
                                 </Card.Body>
                             </Card>
                         )}

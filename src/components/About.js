@@ -1,15 +1,18 @@
 import React from 'react'
 import { Fade } from 'react-reveal';
+import Face from '../0.jpeg';
+
 
 const About = () => {
     return (
-        <div id="about">
+        <div className="about-container" id="about">
             <Fade>
                 <h3>About</h3>
             </Fade>
             <Fade bottom>
-                <div>
-                    <p>Caroline Old</p>
+                <div className="about-container2">
+                    <img className="face" src={Face} />
+                    <h4>Caroline Old</h4>
                     <p>26. Scottish. Stockholm</p>
                     <p>Graduated with Law LLB (Hons) degree, background in digital marketing.</p>
                     <p>Passionate about Front-End Development.</p>
