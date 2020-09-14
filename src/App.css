@@ -113,7 +113,7 @@ a {
 
 
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 700px) {
   .about-container {
     max-width: 700px;
     margin: auto;
@@ -122,4 +122,60 @@ a {
   h3 {
     font-size: 2em;
   }
+
+  .project-card-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1em;
+    justify-content: center;
+    align-content: space-around;
+    align-items: start;
+    margin: 0em 0em 3em 0em;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  
+  .about-container {
+    max-width: 800px;
+  }
+
+  .about-container2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1em;
+    justify-content: center;
+    align-content: space-around;
+    align-items: start;    
+  }
+
+  .about-code {
+    padding-top: 1em;
+    text-align: justify;
+  }
+
+  .about-quotes {
+    grid-column: 1/3;
+    text-align: justify;
+  }
+
+}
+
+@media only screen and (min-width: 900px) {
+  .about-container {
+    max-width: 800px;
+  }
+
+  .project-card-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 1em;
+    justify-content: center;
+    align-content: space-around;
+    align-items: start;
+    margin: 0em 3em 3em 3em;
+    margin: auto;
+    max-width: 800px;
+  }
+
 }
