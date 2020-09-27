@@ -1,11 +1,10 @@
 import React from "react";
-import HeaderNav from "./components/HeaderNav";
 import "./App.css";
 
 const App = () => {
   return (
     <div className="App">
-      <HeaderNav />
+      Hello wurllldd
     </div>
   );
 };
