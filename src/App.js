@@ -1,19 +1,15 @@
-import React from 'react';
-import NavBar from './components/NavBar';
-import About from './components/About';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import './App.css';
+import React from "react";
+import HeaderNav from "./components/HeaderNav";
+import "./App.css";
 
-const App  = () => {
+const App = () => {
   return (
-    <div className="app">
-        <NavBar />
-        <About />
-        <Projects />
-        <Contact />
+    <div className="App">
+      <HeaderNav />
     </div>
   );
-}
+};
 
 export default App;
+
+// https://www.react-reveal.com/examples/common/ for smooth transitions/animations

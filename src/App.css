@@ -1,181 +1,144 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 body {
-  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 1em;
-  line-height: 1.35em;
-  font-weight: 300;
-  text-align: center;
-  margin: 1em 0em 0em 0em;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-p  {
-  margin: 1em;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+body {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  /* background-image: url("https://cdn.pixabay.com/photo/2017/05/13/17/41/textile-2310247_1280.png"); */
+  /* background-image: url("https://images.pexels.com/photos/3541916/pexels-photo-3541916.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 h1 {
-  font-family: 'Rubik', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  margin: 1em;
+  font-family: "Rubik", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 1.5em;
+  color: black;
 }
 
-h3 {
-  font-family: 'Rubik', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+h2 {
+  font-family: "Rubik", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  font-size: 1.7em;
-  margin: 2em 0em 0em 0em;
+  font-size: 1.2em;
+  color: whitesmoke;
+}
+
+h3,
+h5 {
+  font-family: "Rubik", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h4 {
-  font-family: 'Rubik', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 1.4em;
-  color: black;
-  font-weight: 300;
-  margin: 1em;
-}
-
-h5 {
-    font-family: 'Rubik', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    margin: 1em 0em -0.2em 0em;
-}
-
-h5 a {
-  color: rgb(163, 163, 163);
-  font-family: 'Rubik', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Rubik", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
 }
 
 a {
-  color: rgb(202, 37, 142);
   text-decoration: none;
-  font-weight: 300;
-}
-
-.navbar {
-  padding: 0.5em 0.8em 1em 0.8em;
-  font-size: 1.2em;
-  max-width: 900px;
-  margin: auto;
-  border-bottom: 1px solid rgb(212, 212, 212);
-}
-
-.navbar-name {
-  color: rgb(202, 37, 142);
-  font-size: 1.2em;
-  float: left;
-}
-
-.nav-link-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.nav-link {
-  text-decoration: none;
-  color: rgb(163, 163, 163);
-  padding: 0em 0.2em 0em 0em;
-}
-
-.nav-link:hover {
   color: black;
 }
 
-.face {
-  border-radius: 50%;
-  filter: grayscale(100%);
-  width: 15em;
-  margin: 1em 0em 0em 0em;
-  border: solid 1px;
-  border-color:rgb(204, 204, 204);
-  opacity: 0.8;
+p {
+  color: black;
 }
 
-.project-card-container {
+.app-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 1em;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.app-header-nav {
+  font-family: "Rubik", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+  padding: 1em 1em 1em 1em;
+  color: black;
+}
+
+.nav-title {
+  color: black;
+  font-size: 1.6em;
+}
+
+.nav-title:hover {
+  color: rgb(109, 109, 109);
+}
+
+.app-header-nav__links {
+  margin: 0em 0.2em 0em 0.2em;
+  color: black;
+}
+
+.app-header-nav__links:hover {
+  color: rgb(109, 109, 109);
+}
+
+.home-container {
+  background-color: rgba(255, 255, 255, 0.7);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0em 0em 3em 0em;
 }
 
-.subtitle {
-  font-size: 0.9em;
-  padding: -1em;
-  margin: -0.5em 0em 0em 0em;
-}
-
-.github-link {
-  color: rgb(163, 163, 163);
-  margin: 0em 0em 2em 0em;
-}
-
-
-
-@media only screen and (min-width: 700px) {
-  .about-container {
-    max-width: 700px;
+.me {
+  width: 400px;
+    height: 500px;
     margin: auto;
-  }
+    margin-top: -2em;
+    padding-top: -2em;
 
-  h3 {
-    font-size: 2em;
-  }
-
-  .project-card-container {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 1em;
-    justify-content: center;
-    align-content: space-around;
-    align-items: start;
-    margin: 0em 0em 3em 0em;
-  }
 }
 
-@media only screen and (min-width: 800px) {
+.home-description {
+  font-size: 1.2em;
+  color: black;
+  text-align: center;
+}
+
+.about-container {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0em 0em 2em 0em;
+  /* margin: auto; */
+  margin-top: -1em;
+  /* max-height: 400px;
+  overflow-y: scroll; */
+  color: black;
+  margin: auto;
+  max-width: 800px;
+}
+
+.about-title {
+  color: black;
+  font-size: 2em;
+}
+
+@media only screen and (min-width: 535px) {
   
-  .about-container {
-    max-width: 800px;
-  }
-
-  .about-container2 {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 1em;
-    justify-content: center;
-    align-content: space-around;
-    align-items: start;    
-  }
-
-  .about-code {
-    padding-top: 1em;
-    text-align: justify;
-  }
-
-  .about-quotes {
-    grid-column: 1/3;
-    text-align: justify;
-  }
-
 }
 
-@media only screen and (min-width: 900px) {
-  .about-container {
-    max-width: 800px;
-  }
+@media only screen and (min-width: 750px) {
+  
+}
 
-  .project-card-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 1em;
-    justify-content: center;
-    align-content: space-around;
-    align-items: start;
-    margin: 0em 3em 3em 3em;
-    margin: auto;
-    max-width: 800px;
-  }
-
+@media only screen and (min-width: 950px) {
+ 
 }
