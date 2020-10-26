@@ -1,8 +1,8 @@
 import React from "react";
-import Intro from './pages/Intro.js'
-import About from './pages/About.js'
-import Projects from './pages/Projects.js'
-import Contact from './pages/Contact.js'
+import Intro from './pages/Intro/Intro.js'
+import About from './pages/About/About.js'
+import Projects from './pages/Projects/Projects.js'
+import Contact from './pages/Contact/Contact.js'
 
 import "./App.css";
 
