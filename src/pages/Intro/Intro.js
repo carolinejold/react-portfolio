@@ -23,7 +23,8 @@ const styles = {
     border: "solid 1px",
     padding: "1em",
     background: "black",
-    margin: "0em 1em 0em 1em",
+    margin:'auto',
+    maxWidth: '20em'
   },
 };
 
@@ -33,7 +34,7 @@ const Intro = () => {
       <div style={styles.cover}>
         <h3>Hi, I'm</h3>
         <br></br>
-        <h1 style={{ fontFamily: "PT Mono, monospace", fontSize: "4.5em" }}>
+        <h1 className='name'>
           CAROLINE OLD
         </h1>
         <br></br>

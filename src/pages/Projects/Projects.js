@@ -11,7 +11,7 @@ const styles = {
   },
   header: {
     color: "whitesmoke",
-    paddingTop: "1em",
+    paddingTop: "3em",
   },
   container: {
     display: "flex",

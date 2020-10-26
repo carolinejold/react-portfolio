@@ -34,8 +34,26 @@ h1 {
 }
 /*# sourceMappingURL=App.css.map */
 
-@media only screen and (min-width: 600px) {
-  body {
-    background-color: lightblue;
+.name {
+  font-family: 'PT Mono', monospace;
+  font-size: 4.5em;
+}
+
+@media only screen and (min-width: 500px) {
+  .name {
+    font-size: 5em;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .name {
+    font-size: 6em;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .name {
+    padding: 0.2em 0em 0.2em 0em;
+    font-size: 8em;
   }
 }
