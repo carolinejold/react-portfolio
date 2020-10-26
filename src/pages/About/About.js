@@ -1,12 +1,23 @@
 import React from "react";
 import Container from "@material-ui/core/Container";
 
+const styles = {
+  container: {
+    display: 'flex',
+    flexFlow: 'column wrap',
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+    marginTop: '1em'
+  },
+};
+
+
 const About = () => {
   return (
     <div className="about">
-      <Container maxWidth="lg">
-        <h1>About</h1>
-        <p>26. Scottish. Stockholm</p>{" "}
+      <h1 style={{paddingTop: '1em'}}>About</h1>
+      <Container style={styles.container} maxWidth="lg">
+        <p>26. Scottish. Stockholm</p>
         <p>
           Graduated with Law LLB (Hons) degree, background in digital marketing
         </p>

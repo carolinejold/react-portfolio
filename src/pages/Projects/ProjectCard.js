@@ -1,7 +1,5 @@
 import React from "react";
-import Container from "@material-ui/core/Container";
 import Button from "@material-ui/core/Button";
-
 
 const styles = {
   card: {
@@ -12,12 +10,14 @@ const styles = {
     justifyContent: 'space-evenly',
     alignItems: 'center',
     textAlign: 'center',
-    border: '1px solid black',
+    border: '1px solid whitesmoke',
     margin: '1em',
-    padding: '0.5em'
+    padding: '0.5em',
+    color: 'whitesmoke'
   },
   button: {
-    fontFamily: "PT Mono, monospace"
+    fontFamily: "PT Mono, monospace",
+    color: 'whitesmoke'
   }
 };
 
