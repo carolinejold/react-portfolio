@@ -1,19 +1,35 @@
 import React from "react";
 import { Link } from "react-scroll";
 
+const styles = {
+  container: {
+    fontFamily: "PT Mono, monospace",
+    backgroundColor: "black",
+    color: "whitesmoke",
+    height: "100vh",
+    textAlign: "center",
+    paddingTop: "4em",
+  },
+};
 
 const Intro = () => {
   return (
-    <div className="intro">
-      <h1>CAROLINE OLD</h1><br></br>
+    <div style={styles.container}>
+      <h1>CAROLINE OLD</h1>
+      <br></br>
       <h3>
-        Full-stack JavaScript developer with a passion for
-        front-end web development
-      </h3><br></br>
-      <p>Want to learn more?</p><br></br>
-      <Link to="about">About</Link><br></br>
-      <Link to="projects">Projects</Link><br></br>
-      <Link to="contact">Contact</Link><br></br>
+        Full-stack JavaScript developer with a passion for front-end web
+        development
+      </h3>
+      <br></br>
+      <p>Want to learn more?</p>
+      <br></br>
+      <Link to="about">About</Link>
+      <br></br>
+      <Link to="projects">Projects</Link>
+      <br></br>
+      <Link to="contact">Contact</Link>
+      <br></br>
     </div>
   );
 };

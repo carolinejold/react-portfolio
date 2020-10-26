@@ -1,6 +1,5 @@
 import React from "react";
 import Container from "@material-ui/core/Container";
-import Timeline from "./Timeline";
 
 const About = () => {
   return (
@@ -41,7 +40,6 @@ const About = () => {
             tongue'
           </i>
         </p>
-        <Timeline />
       </Container>
     </div>
   );

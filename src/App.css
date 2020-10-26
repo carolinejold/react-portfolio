@@ -5,28 +5,23 @@
   font-weight: 300;
 }
 
-.intro {
-  font-family: "PT Mono", monospace;
-  background-image: url("./images/photo3.jpeg");
-  color: black;
-  height: 100vh;
-  text-align: center;
-  padding-top: 4em;
-}
 
-.intro h1 {
-  font-size: 3em;
+h1 {
+  text-align: center;
 }
 
 .about {
-  height: 100vh;
+  font-family: "PT Mono", monospace;
+  min-height: 100vh;
 }
 
 .projects {
-  height: 100vh;
+  font-family: "PT Mono", monospace;
+
 }
 
 .contact {
-  height: 100vh;
+  font-family: "PT Mono", monospace;
+
 }
 /*# sourceMappingURL=App.css.map */

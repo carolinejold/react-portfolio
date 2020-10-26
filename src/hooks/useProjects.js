@@ -5,8 +5,8 @@ const useProjects = () => {
   const [projects, setProjects] = useState([]);
   useEffect(() => {
     axios({
-      url: "https://api.github.com/users/carolinejold/repos",
-      method: "get",
+      url: "https://api.github.com/users/carolinejold/repos?sort=updated",
+      method: "get"
     //   headers: {
     //     Accept: "application/vnd.github.nebula-preview+json",
     //   },
