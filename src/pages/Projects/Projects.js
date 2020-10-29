@@ -11,7 +11,7 @@ const styles = {
   },
   header: {
     color: "whitesmoke",
-    paddingTop: "3em",
+    padding: "3em 0em 1em 0em",
   },
   container: {
     display: "flex",
@@ -20,6 +20,7 @@ const styles = {
     alignItems: "center",
     maxWidth: "70em",
     color: "whitesmoke",
+    paddingBottom: "2em"
   },
 };
 

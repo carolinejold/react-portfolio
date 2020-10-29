@@ -13,6 +13,7 @@ const styles = {
   },
   header: {
     color: "white",
+    paddingTop: "1em",
   },
   cover: {
     background: "black",
@@ -34,7 +35,6 @@ const Contact = () => {
       <div style={styles.cover}>
         <h1 style={styles.header}>Contact</h1>
         <Container style={styles.container} maxWidth="lg">
-       
           <Link to="https://www.linkedin.com/in/carolinejold/">
           <LinkedInIcon fontSize="large" style={{ color: "white" }} />
           </Link>
@@ -44,10 +44,6 @@ const Contact = () => {
           <Link to="contact">
           <MailOutlineIcon fontSize="large" style={{ color: "white" }} />
           </Link>
-
-          
-          
-          
         </Container>
       </div>
     </div>
