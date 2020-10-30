@@ -35,15 +35,15 @@ const Contact = () => {
       <div style={styles.cover}>
         <h1 style={styles.header}>Contact</h1>
         <Container style={styles.container} maxWidth="lg">
-          <Link to="https://www.linkedin.com/in/carolinejold/">
+          <a href="https://www.linkedin.com/in/carolinejold/" target="_blank">
           <LinkedInIcon fontSize="large" style={{ color: "white" }} />
-          </Link>
-          <Link to="projects">
+          </a>
+          <a href="https://www.instagram.com/caroline_codes/" target="_blank">
           <InstagramIcon fontSize="large" style={{ color: "white" }} />
-          </Link>
-          <Link to="contact">
+          </a>
+          <a href="mailto:carolinejold@gmail.com" target="_blank">
           <MailOutlineIcon fontSize="large" style={{ color: "white" }} />
-          </Link>
+          </a>
         </Container>
       </div>
     </div>

@@ -16,7 +16,7 @@ const About = () => {
   return (
     <div className="about">
       <h1 style={{paddingTop: '1em'}}>About</h1>
-      <Container style={styles.container} maxWidth="sm">
+      <Container className='about-container' style={styles.container} maxWidth="sm">
         <p>26. Scottish. Stockholm</p><br></br>
         <p>
           Graduated with Law LLB (Hons) degree, background in digital marketing
