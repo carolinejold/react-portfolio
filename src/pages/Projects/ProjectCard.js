@@ -10,14 +10,11 @@ const styles = {
     justifyContent: 'space-evenly',
     alignItems: 'center',
     textAlign: 'center',
-    border: '1px solid whitesmoke',
+    border: '1px solid',
     margin: '1em',
     padding: '0.5em',
-    color: 'whitesmoke'
   },
   button: {
-    fontFamily: "PT Mono, monospace",
-    color: 'whitesmoke'
   }
 };
 

@@ -7,10 +7,8 @@ import ProjectCard from "./ProjectCard";
 
 const styles = {
   component: {
-    backgroundColor: "rgb(8, 8, 26)",
   },
   header: {
-    color: "whitesmoke",
     padding: "3em 0em 1em 0em",
   },
   container: {
@@ -19,7 +17,6 @@ const styles = {
     justifyContent: "center",
     alignItems: "center",
     maxWidth: "70em",
-    color: "whitesmoke",
     paddingBottom: "2em"
   },
 };
