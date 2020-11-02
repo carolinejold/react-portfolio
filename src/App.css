@@ -11,3 +11,7 @@
  text-decoration: bold;
  cursor: pointer;
 }
+
+.contact-links:hover {
+  color: 'grey'
+}

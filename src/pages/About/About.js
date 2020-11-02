@@ -25,6 +25,7 @@ const styles = {
     borderRadius: "16px",
     backgroundColor: "white",
     padding: "1.2em",
+    minWidth: '20em'
   },
   image: {
     maxWidth: "26em",

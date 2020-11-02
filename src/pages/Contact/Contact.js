@@ -9,16 +9,19 @@ import { Link } from "react-scroll";
 const styles = {
   component: {
     height: "100vh",
+    backgroundColor: "rgb(235, 236, 232)",
   },
   header: {
     paddingTop: "4em",
+    textAlign: "center",
   },
   container: {
-    display: "flex",
-    flexFlow: "row wrap",
+    display: "grid",
+    gridTemplateColumns: "auto auto auto",
+    gridGap: "1em",
     justifyContent: "center",
     alignItems: "center",
-    paddingTop: "1em",
+    paddingTop: "2em",
   },
 };
 
@@ -29,13 +32,13 @@ const Contact = () => {
         <h1 style={styles.header}>Contact</h1>
         <Container style={styles.container} maxWidth="lg">
           <a href="https://www.linkedin.com/in/carolinejold/" target="_blank">
-          <LinkedInIcon fontSize="large" style={{ color: "black" }} />
+            <LinkedInIcon fontSize="large" style={{ color: "black" }} />
           </a>
           <a href="https://www.instagram.com/caroline_codes/" target="_blank">
-          <InstagramIcon fontSize="large" style={{ color: "black" }} />
+            <InstagramIcon fontSize="large" style={{ color: "black" }} />
           </a>
           <a href="mailto:carolinejold@gmail.com" target="_blank">
-          <MailOutlineIcon fontSize="large" style={{ color: "black" }} />
+            <MailOutlineIcon fontSize="large" style={{ color: "black" }} />
           </a>
         </Container>
       </div>

@@ -9,47 +9,52 @@ const styles = {
     height: "100vh",
     backgroundPosition: "center",
     backgroundSize: "cover",
-    fontFamily: 'Playfair Display, serif',
+    fontFamily: "Playfair Display, serif",
     height: "100vh",
-    textAlign: 'left',
+    textAlign: "left",
+  },
+  padding: {
+    padding: "15em 0em 0em 15%",
   },
   container: {
-    padding: '15em 0em 0em 15%'
   },
   link: {
-    fontSize: '1em',
-    border: "solid 1px",
+    fontSize: "1em",
+    border: "solid 1px  rgb(37, 37, 36)",
     borderRadius: "10px",
     padding: "0.6em 1.4em 0.8em 1.4em",
-    margin: '0em 0.2em 0em 0.2em',
-    fontFamily: 'Lato, sans-serif',
+    margin: "0em 0.2em 0em 0.2em",
+    fontFamily: "Lato, sans-serif",
+    background: "rgba(255, 255, 255, 0.2)",
   },
 };
 
 const Intro = () => {
   return (
     <div style={styles.component}>
-      <div style={styles.container}>
-        <h1>Hi, I'm Caroline Old</h1>
-        <br></br>
-        <h3>
-          Full-stack JavaScript developer with a passion <br></br>for front-end web
-          development
-        </h3>
-        <br></br>
-        <h3>Want to learn more?</h3>
-        <br></br>
-        <section style={{ display: "flex", flexDirection: "row" }}>
-          <Link className='intro-link' to="about">
-            <div style={styles.link}>About</div>
-          </Link>
-          <Link className='intro-link' to="projects">
-            <div style={styles.link}>Projects</div>
-          </Link>
-          <Link className='intro-link' to="contact">
-            <div style={styles.link}>Contact</div>
-          </Link>
-        </section>
+      <div style={styles.padding}>
+        <div style={styles.container}>
+          <h1>Hi, I'm Caroline Old</h1>
+          <br></br>
+          <h3>
+            Full-stack JavaScript developer with a passion <br></br>for
+            front-end web development
+          </h3>
+          <br></br>
+          <h3>Want to learn more?</h3>
+          <br></br>
+          <section style={{ display: "flex", flexDirection: "row" }}>
+            <Link className="intro-link" to="about">
+              <div style={styles.link}>About</div>
+            </Link>
+            <Link className="intro-link" to="projects">
+              <div style={styles.link}>Projects</div>
+            </Link>
+            <Link className="intro-link" to="contact">
+              <div style={styles.link}>Contact</div>
+            </Link>
+          </section>
+        </div>
       </div>
     </div>
   );

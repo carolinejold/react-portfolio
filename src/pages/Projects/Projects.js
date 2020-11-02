@@ -7,9 +7,12 @@ import ProjectCard from "./ProjectCard";
 
 const styles = {
   component: {
+    backgroundColor: "rgb(235, 236, 232)",
   },
   header: {
-    padding: "3em 0em 1em 0em",
+   padding: '3em 0em 1em 0em',
+   textAlign: 'center',
+   fontFamily: "Playfair Display, serif",
   },
   container: {
     display: "flex",
@@ -18,7 +21,7 @@ const styles = {
     alignItems: "center",
     maxWidth: "70em",
     paddingBottom: "2em"
-  },
+  }
 };
 
 const Projects = () => {
