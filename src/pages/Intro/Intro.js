@@ -2,44 +2,51 @@ import React from "react";
 import { Link } from "react-scroll";
 
 const styles = {
-  container: {
-    fontFamily: "PT Mono, monospace",
+  component: {
+    backgroundImage:
+      'url("https://images.pexels.com/photos/403575/pexels-photo-403575.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")',
+    backgroundRepeat: "no-repeat",
     height: "100vh",
-    textAlign: "center",
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+    fontFamily: 'Playfair Display, serif',
+    height: "100vh",
+    textAlign: 'left',
+  },
+  container: {
+    padding: '15em 0em 0em 15%'
   },
   link: {
+    fontSize: '1em',
     border: "solid 1px",
-    borderRadius: '16px',
-    padding: "1em",
-    margin: "auto",
-    maxWidth: "20em",
+    borderRadius: "10px",
+    padding: "0.6em 1.4em 0.8em 1.4em",
+    margin: '0em 0.2em 0em 0.2em',
+    fontFamily: 'Lato, sans-serif',
   },
 };
 
 const Intro = () => {
   return (
-    <div style={styles.container}>
-      <div>
-        <h3>Hi, I'm</h3>
+    <div style={styles.component}>
+      <div style={styles.container}>
+        <h1>Hi, I'm Caroline Old</h1>
         <br></br>
-        <h1 style={{ fontSize: "3em" }}>Caroline Old</h1>
-        <br></br>
-        <h3 style={{ margin: "auto", maxWidth: "14em" }}>
-          Full-stack JavaScript developer with a passion for front-end web
+        <h3>
+          Full-stack JavaScript developer with a passion <br></br>for front-end web
           development
         </h3>
         <br></br>
-        <p>Want to learn more?</p>
+        <h3>Want to learn more?</h3>
         <br></br>
-        <br></br>
-        <section style={{ display: "flex", flexDirection: "column" }}>
-          <Link to="about">
+        <section style={{ display: "flex", flexDirection: "row" }}>
+          <Link className='intro-link' to="about">
             <div style={styles.link}>About</div>
           </Link>
-          <Link to="projects">
+          <Link className='intro-link' to="projects">
             <div style={styles.link}>Projects</div>
           </Link>
-          <Link to="contact">
+          <Link className='intro-link' to="contact">
             <div style={styles.link}>Contact</div>
           </Link>
         </section>

@@ -1,42 +1,58 @@
 import React from "react";
 import Container from "@material-ui/core/Container";
-import me from "./images/me.jpg";
+import me from "./images/me.png";
 
 const styles = {
   component: {
     minHeight: "100vh",
-    textAlign: "center",
+    backgroundColor: "rgb(235, 236, 232)",
+    padding: '3em'
   },
   container: {
-    display: "flex",
-    flexFlow: "column wrap",
-    justifyContent: "space-evenly",
-    alignItems: "center",
-    marginTop: "1em",
-    backgroundColor: "white",
-    color: "black",
+    display: "grid",
+    gridTemplateColumns: "auto auto",
+    gridGap: "1em",
+    // justifyContent: "space-evenly",
+    // alignItems: "center",
     borderRadius: "16px",
-    padding: "1em",
+    // padding: "1em",
+    maxWidth: "65em",
+  },
+  text: {
+    fontFamily: 'Lato, sans-serif',
+    fontSize: '1em',
+    border: "1px solid white",
+    borderRadius: "16px",
+    backgroundColor: "white",
+    padding: "1.2em",
   },
   image: {
-    maxWidth: '20em',
-    borderRadius: '16px'
-  }
+    maxWidth: "26em",
+    borderRadius: "16px",
+    border: "5px solid white",
+    filter: "saturate(-4)",
+  },
 };
 
 const About = () => {
   return (
-    <section className="about">
-      <h1 style={{ paddingTop: "1em" }}>About</h1>
+    <section className="about" style={styles.component}>
       <Container
         className="about-container"
         style={styles.container}
-        maxWidth="sm"
+        maxWidth="md"
       >
-        <section>
-          <img src={me} alt="Me" style={styles.image} />
-        </section>
-        <section>
+        <section style={styles.text}>
+          <h1
+            style={{
+              fontFamily: "Playfair Display, serif",
+              fontSize: '1.5em',
+              textAlign: "center",
+            }}
+          >
+            About
+          </h1>
+          <br></br>
           <p>26. Scottish. Stockholm</p>
           <br></br>
           <p>
@@ -82,6 +98,9 @@ const About = () => {
             </i>
           </p>
           <br></br>
+        </section>
+        <section style={styles.children}>
+          <img src={me} alt="Me" style={styles.image} />
         </section>
       </Container>
     </section>
