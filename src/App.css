@@ -31,7 +31,7 @@
 }
 
 .about-image {
-  max-width: 25em;
+  max-width: 20em;
   border-radius: 16px;
   border: 5px solid white;
   filter: saturate(-4);
@@ -46,7 +46,7 @@
   background-color: white;
   padding: 1.5em;
   margin-bottom: 1em;
-  max-width: 25em;
+  max-width: 20em;
 }
 
 @media only screen and (min-width: 800px) {
