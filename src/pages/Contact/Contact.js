@@ -16,6 +16,8 @@ const styles = {
   header: {
     paddingTop: "1em",
     textAlign: "center",
+    fontFamily: "Playfair Display, serif",
+
   },
   container: {
     display: "grid",
