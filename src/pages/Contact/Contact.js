@@ -8,10 +8,10 @@ import { Link } from "react-scroll";
 
 const styles = {
   component: {
-    height: "25vh",
+    height: "100vh",
   },
   header: {
-    paddingTop: "1em",
+    paddingTop: "4em",
   },
   container: {
     display: "flex",

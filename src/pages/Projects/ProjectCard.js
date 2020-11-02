@@ -11,6 +11,7 @@ const styles = {
     alignItems: 'center',
     textAlign: 'center',
     border: '1px solid',
+    borderRadius: '16px',
     margin: '1em',
     padding: '0.5em',
   },
