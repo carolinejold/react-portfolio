@@ -10,7 +10,6 @@ const styles = {
     backgroundPosition: "center",
     backgroundSize: "cover",
     fontFamily: "Playfair Display, serif",
-    height: "100vh",
     textAlign: "left",
   },
   padding: {
