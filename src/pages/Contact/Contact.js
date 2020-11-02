@@ -3,7 +3,9 @@ import Container from "@material-ui/core/Container";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
-
+import KeyboardArrowUpOutlinedIcon from "@material-ui/icons/KeyboardArrowUpOutlined";
+import { Link } from "react-scroll";
+import Jump from "react-reveal/Jump";
 
 const styles = {
   component: {
@@ -11,7 +13,7 @@ const styles = {
     backgroundColor: "rgb(235, 236, 232)",
   },
   header: {
-    paddingTop: "4em",
+    paddingTop: "1em",
     textAlign: "center",
   },
   container: {
@@ -30,16 +32,38 @@ const Contact = () => {
       <div style={styles.cover}>
         <h1 style={styles.header}>Contact</h1>
         <Container style={styles.container} maxWidth="lg">
-          <a href="https://www.linkedin.com/in/carolinejold/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.linkedin.com/in/carolinejold/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <LinkedInIcon fontSize="large" style={{ color: "black" }} />
           </a>
-          <a href="https://www.instagram.com/caroline_codes/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.instagram.com/caroline_codes/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <InstagramIcon fontSize="large" style={{ color: "black" }} />
           </a>
-          <a href="mailto:carolinejold@gmail.com" target="_blank" rel="noopener noreferrer">
+          <a
+            href="mailto:carolinejold@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <MailOutlineIcon fontSize="large" style={{ color: "black" }} />
           </a>
         </Container>
+        <section style={{ textAlign: "center", paddingBottom: "2em" }}>
+          <Jump>
+            <Link to="intro">
+              <KeyboardArrowUpOutlinedIcon
+                className="intro-down-arrow"
+                style={{ fontSize: "7em", paddingTop: '3.5em' }}
+              />
+            </Link>
+          </Jump>
+        </section>
       </div>
     </div>
   );

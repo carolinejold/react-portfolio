@@ -8,10 +8,14 @@ import "react-vertical-timeline-component/style.min.css";
 import CodeIcon from "@material-ui/icons/Code";
 import WorkOutlineIcon from "@material-ui/icons/WorkOutline";
 import GavelIcon from "@material-ui/icons/Gavel";
+import { Link } from "react-scroll";
+import Jump from "react-reveal/Jump";
+import KeyboardArrowDownOutlinedIcon from "@material-ui/icons/KeyboardArrowDownOutlined";
 
 const styles = {
   component: {
     backgroundColor: "rgb(235, 236, 232)",
+    padding: '1em 0em 3em 0em'
   },
   paragraph: {
     fontWeight: "300",
@@ -35,14 +39,15 @@ const styles = {
 
 const Timeline = () => {
   return (
-    <div style={styles.component}>
+    <div className="timeline" style={styles.component}>
       <Container maxWidth="lg">
         <h1 style={styles.title}>Timeline</h1>
+        <br></br>
         <VerticalTimeline>
           <VerticalTimelineElement
             contentStyle={styles.element}
             contentArrowStyle={{ borderRight: "7px solid  rgb(255, 255, 255)" }}
-            iconStyle={{ background: "rgb(255, 255, 255)", color: "black" }}
+            iconStyle={{ background: "rgb(240, 240, 240)", color: "black" }}
             icon={<GavelIcon />}
           >
             <h3 style={styles.subtitles}>Bachelor of Laws LLB (Hons)</h3>
@@ -58,7 +63,7 @@ const Timeline = () => {
             className="vertical-timeline-element--work"
             contentStyle={styles.element}
             contentArrowStyle={{ borderRight: "7px solid  rgb(255, 255, 255)" }}
-            iconStyle={{ background: "rgb(255, 255, 255)", color: "black" }}
+            iconStyle={{ background: "rgb(240, 240, 240)", color: "black" }}
             icon={<WorkOutlineIcon />}
           >
             <h3 style={styles.subtitles}>The LEGO Group</h3>
@@ -75,7 +80,7 @@ const Timeline = () => {
           <VerticalTimelineElement
             contentStyle={styles.element}
             contentArrowStyle={{ borderRight: "7px solid  rgb(255, 255, 255)" }}
-            iconStyle={{ background: "rgb(255, 255, 255)", color: "black" }}
+            iconStyle={{ background: "rgb(240, 240, 240)", color: "black" }}
             icon={<CodeIcon />}
           >
             <h3 style={styles.subtitles}>Full Stack JavaScript Developer</h3>
@@ -93,7 +98,7 @@ const Timeline = () => {
           <VerticalTimelineElement
             contentStyle={styles.element}
             contentArrowStyle={{ borderRight: "7px solid  rgb(255, 255, 255)" }}
-            iconStyle={{ background: "rgb(255, 255, 255)", color: "black" }}
+            iconStyle={{ background: "rgb(240, 240, 240)", color: "black" }}
             icon={<CodeIcon />}
           >
             <h3 style={styles.subtitles}>
@@ -112,6 +117,16 @@ const Timeline = () => {
             // icon={<StarIcon />}
           />
         </VerticalTimeline>
+        <section style={{ textAlign: "center" }}>
+        <Jump>
+          <Link to="projects">
+            <KeyboardArrowDownOutlinedIcon
+              className="intro-down-arrow"
+              style={{ fontSize: "7em" }}
+            />
+          </Link>
+        </Jump>
+      </section>
       </Container>
     </div>
   );

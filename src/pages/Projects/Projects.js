@@ -2,6 +2,10 @@ import React from "react";
 import Container from "@material-ui/core/Container";
 import useProjects from "../../hooks/useProjects";
 import ProjectCard from "./ProjectCard";
+import { Link } from "react-scroll";
+import Jump from "react-reveal/Jump";
+import KeyboardArrowDownOutlinedIcon from "@material-ui/icons/KeyboardArrowDownOutlined";
+
 
 // order by last updated
 
@@ -10,7 +14,7 @@ const styles = {
     backgroundColor: "rgb(235, 236, 232)",
   },
   header: {
-   padding: '3em 0em 1em 0em',
+   padding: '1em 0em 1em 0em',
    textAlign: 'center',
    fontFamily: "Playfair Display, serif",
   },
@@ -20,7 +24,6 @@ const styles = {
     justifyContent: "center",
     alignItems: "center",
     maxWidth: "70em",
-    paddingBottom: "2em"
   }
 };
 
@@ -40,6 +43,16 @@ const Projects = () => {
           />
         ))}
       </Container>
+      <section style={{ textAlign: "center", paddingBottom: "2em" }}>
+        <Jump>
+          <Link to="contact">
+            <KeyboardArrowDownOutlinedIcon
+              className="intro-down-arrow"
+              style={{ fontSize: "7em" }}
+            />
+          </Link>
+        </Jump>
+      </section>
     </div>
   );
 };

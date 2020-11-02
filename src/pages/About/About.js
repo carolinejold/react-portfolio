@@ -1,12 +1,15 @@
 import React from "react";
 import Container from "@material-ui/core/Container";
 import me from "./images/me.png";
+import { Link } from "react-scroll";
+import Jump from "react-reveal/Jump";
+import KeyboardArrowDownOutlinedIcon from "@material-ui/icons/KeyboardArrowDownOutlined";
 
 const styles = {
   component: {
     minHeight: "100vh",
     backgroundColor: "rgb(235, 236, 232)",
-    padding: '3em'
+    padding: "3em",
   },
   container: {
     display: "grid",
@@ -19,13 +22,13 @@ const styles = {
     maxWidth: "65em",
   },
   text: {
-    fontFamily: 'Lato, sans-serif',
-    fontSize: '1em',
+    fontFamily: "Lato, sans-serif",
+    fontSize: "1em",
     border: "1px solid white",
     borderRadius: "16px",
     backgroundColor: "white",
     padding: "1.2em",
-    minWidth: '20em'
+    minWidth: "20em",
   },
   image: {
     maxWidth: "26em",
@@ -47,7 +50,7 @@ const About = () => {
           <h1
             style={{
               fontFamily: "Playfair Display, serif",
-              fontSize: '1.5em',
+              fontSize: "1.5em",
               textAlign: "center",
             }}
           >
@@ -104,6 +107,16 @@ const About = () => {
           <img src={me} alt="Me" style={styles.image} />
         </section>
       </Container>
+      <section style={{ textAlign: "center" }}>
+        <Jump>
+          <Link to="timeline">
+            <KeyboardArrowDownOutlinedIcon
+              className="intro-down-arrow"
+              style={{ fontSize: "7em" }}
+            />
+          </Link>
+        </Jump>
+      </section>
     </section>
   );
 };

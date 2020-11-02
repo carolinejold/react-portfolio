@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
+import Jump from "react-reveal/Jump";
+import KeyboardArrowDownOutlinedIcon from "@material-ui/icons/KeyboardArrowDownOutlined";
 
 const styles = {
   component: {
@@ -15,8 +17,7 @@ const styles = {
   padding: {
     padding: "15em 0em 0em 15%",
   },
-  container: {
-  },
+  container: {},
   link: {
     fontSize: "1em",
     border: "solid 1px  rgb(37, 37, 36)",
@@ -30,7 +31,7 @@ const styles = {
 
 const Intro = () => {
   return (
-    <div style={styles.component}>
+    <div className="intro" style={styles.component}>
       <div style={styles.padding}>
         <div style={styles.container}>
           <h1>Hi, I'm Caroline Old</h1>
@@ -41,8 +42,16 @@ const Intro = () => {
           </h3>
           <br></br>
           <h3>Want to learn more?</h3>
-          <br></br>
-          <section style={{ display: "flex", flexDirection: "row" }}>
+          <Jump>
+            <Link to="about">
+              <KeyboardArrowDownOutlinedIcon
+                className="intro-down-arrow"
+                style={{ fontSize: "7em" }}
+              />
+            </Link>
+          </Jump>
+
+          {/* <section style={{ display: "flex", flexDirection: "row" }}>
             <Link className="intro-link" to="about">
               <div style={styles.link}>About</div>
             </Link>
@@ -52,7 +61,7 @@ const Intro = () => {
             <Link className="intro-link" to="contact">
               <div style={styles.link}>Contact</div>
             </Link>
-          </section>
+          </section> */}
         </div>
       </div>
     </div>
