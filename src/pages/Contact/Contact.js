@@ -6,6 +6,7 @@ import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import KeyboardArrowUpOutlinedIcon from "@material-ui/icons/KeyboardArrowUpOutlined";
 import { Link } from "react-scroll";
 import Jump from "react-reveal/Jump";
+import Fade from "react-reveal/Fade";
 
 const styles = {
   component: {
@@ -18,7 +19,7 @@ const styles = {
   },
   container: {
     display: "grid",
-    gridTemplateColumns: "auto auto auto",
+    gridTemplateColumns: "auto",
     gridGap: "1em",
     justifyContent: "center",
     alignItems: "center",
@@ -30,36 +31,49 @@ const Contact = () => {
   return (
     <div className="contact" style={styles.component}>
       <div style={styles.cover}>
-        <h1 style={styles.header}>Contact</h1>
+        <Fade>
+          <h1 style={styles.header}>Contact</h1>
+        </Fade>
         <Container style={styles.container} maxWidth="lg">
-          <a
-            href="https://www.linkedin.com/in/carolinejold/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <LinkedInIcon fontSize="large" style={{ color: "black" }} />
-          </a>
-          <a
-            href="https://www.instagram.com/caroline_codes/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <InstagramIcon fontSize="large" style={{ color: "black" }} />
-          </a>
-          <a
-            href="mailto:carolinejold@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <MailOutlineIcon fontSize="large" style={{ color: "black" }} />
-          </a>
+          <Fade>
+            <a
+              href="https://www.linkedin.com/in/carolinejold/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <LinkedInIcon
+                fontSize="large"
+                style={{ color: "black", fontSize: "3em" }}
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/caroline_codes/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <InstagramIcon
+                fontSize="large"
+                style={{ color: "black", fontSize: "3em" }}
+              />
+            </a>
+            <a
+              href="mailto:carolinejold@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <MailOutlineIcon
+                fontSize="large"
+                style={{ color: "black", fontSize: "3em" }}
+              />
+            </a>
+          </Fade>
         </Container>
         <section style={{ textAlign: "center", paddingBottom: "2em" }}>
           <Jump>
             <Link to="intro">
               <KeyboardArrowUpOutlinedIcon
                 className="intro-down-arrow"
-                style={{ fontSize: "7em", paddingTop: '3.5em' }}
+                style={{ fontSize: "7em", paddingTop: "2em" }}
               />
             </Link>
           </Jump>

@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-scroll";
 import Jump from "react-reveal/Jump";
 import KeyboardArrowDownOutlinedIcon from "@material-ui/icons/KeyboardArrowDownOutlined";
+import Fade from "react-reveal/Fade";
 
 const styles = {
   component: {
@@ -15,7 +16,7 @@ const styles = {
     textAlign: "left",
   },
   padding: {
-    padding: "15em 0em 0em 15%",
+    padding: "15em 0em 0em 13%",
   },
   container: {},
   link: {
@@ -33,36 +34,26 @@ const Intro = () => {
   return (
     <div className="intro" style={styles.component}>
       <div style={styles.padding}>
-        <div style={styles.container}>
-          <h1>Hi, I'm Caroline Old</h1>
-          <br></br>
-          <h3>
-            Full-stack JavaScript developer with a passion <br></br>for
-            front-end web development
-          </h3>
-          <br></br>
-          <h3>Want to learn more?</h3>
-          <Jump>
-            <Link to="about">
-              <KeyboardArrowDownOutlinedIcon
-                className="intro-down-arrow"
-                style={{ fontSize: "7em" }}
-              />
-            </Link>
-          </Jump>
-
-          {/* <section style={{ display: "flex", flexDirection: "row" }}>
-            <Link className="intro-link" to="about">
-              <div style={styles.link}>About</div>
-            </Link>
-            <Link className="intro-link" to="projects">
-              <div style={styles.link}>Projects</div>
-            </Link>
-            <Link className="intro-link" to="contact">
-              <div style={styles.link}>Contact</div>
-            </Link>
-          </section> */}
-        </div>
+        <Fade>
+          <div className="intro-container">
+            <h1>Hi, I'm Caroline Old</h1>
+            <br></br>
+            <h3>
+              Full-stack JavaScript developer with a passion for
+              front-end web development
+            </h3>
+            <br></br>
+            <h3>Want to learn more?</h3>
+            <Jump>
+              <Link to="about">
+                <KeyboardArrowDownOutlinedIcon
+                  className="intro-down-arrow"
+                  style={{ fontSize: "7em" }}
+                />
+              </Link>
+            </Jump>
+          </div>
+        </Fade>
       </div>
     </div>
   );

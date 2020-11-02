@@ -10,12 +10,13 @@ import WorkOutlineIcon from "@material-ui/icons/WorkOutline";
 import GavelIcon from "@material-ui/icons/Gavel";
 import { Link } from "react-scroll";
 import Jump from "react-reveal/Jump";
+import Fade from "react-reveal/Fade";
 import KeyboardArrowDownOutlinedIcon from "@material-ui/icons/KeyboardArrowDownOutlined";
 
 const styles = {
   component: {
     backgroundColor: "rgb(235, 236, 232)",
-    padding: '1em 0em 3em 0em'
+    padding: "1em 0em 3em 0em",
   },
   paragraph: {
     fontWeight: "300",
@@ -26,11 +27,11 @@ const styles = {
   },
   subtitles: {
     fontFamily: "Playfair Display, serif",
-    fontSize: '1.3em'
+    fontSize: "1.3em",
   },
   element: {
     background: "rgb(255, 255, 255)",
-    border: '1px solid rgb(240, 240, 240)',
+    border: "1px solid rgb(240, 240, 240)",
     fontFamily: "Lato, sans-serif",
     borderRadius: "16px",
     boxShadow: "none",
@@ -41,7 +42,9 @@ const Timeline = () => {
   return (
     <div className="timeline" style={styles.component}>
       <Container maxWidth="lg">
-        <h1 style={styles.title}>Timeline</h1>
+        <Fade>
+          <h1 style={styles.title}>Timeline</h1>
+        </Fade>
         <br></br>
         <VerticalTimeline>
           <VerticalTimelineElement
@@ -118,15 +121,15 @@ const Timeline = () => {
           />
         </VerticalTimeline>
         <section style={{ textAlign: "center" }}>
-        <Jump>
-          <Link to="projects">
-            <KeyboardArrowDownOutlinedIcon
-              className="intro-down-arrow"
-              style={{ fontSize: "7em" }}
-            />
-          </Link>
-        </Jump>
-      </section>
+          <Jump>
+            <Link to="projects">
+              <KeyboardArrowDownOutlinedIcon
+                className="intro-down-arrow"
+                style={{ fontSize: "7em" }}
+              />
+            </Link>
+          </Jump>
+        </section>
       </Container>
     </div>
   );
