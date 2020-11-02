@@ -31,7 +31,7 @@
 }
 
 .about-image {
-  max-width: 20em;
+  max-width: 25em;
   border-radius: 16px;
   border: 5px solid white;
   filter: saturate(-4);
@@ -46,12 +46,12 @@
   background-color: white;
   padding: 1.5em;
   margin-bottom: 1em;
-  max-width: 20em;
+  max-width: 25em;
 }
 
 @media only screen and (min-width: 800px) {
   .intro-container {
-    max-width: 22em;
+    max-width: 25em;
   }
 
   .about-container {
