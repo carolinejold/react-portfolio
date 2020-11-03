@@ -116,13 +116,13 @@ const Timeline = () => {
             <small>2020-present</small>
           </VerticalTimelineElement>
           <VerticalTimelineElement
-            iconStyle={{ background: "rgb(255, 255, 255)", color: "black" }}
+            iconStyle={{ background: "rgb(240, 240, 240)", color: "black" }}
             // icon={<StarIcon />}
           />
         </VerticalTimeline>
         <section style={{ textAlign: "center" }}>
           <Jump>
-            <Link to="projects">
+            <Link to="projects" spy={true} smooth={true}>
               <KeyboardArrowDownOutlinedIcon
                 className="intro-down-arrow"
                 style={{ fontSize: "7em" }}

@@ -48,7 +48,7 @@ const Projects = () => {
         </Container>
         <section style={{ textAlign: "center", paddingBottom: "2em" }}>
           <Jump>
-            <Link to="contact">
+            <Link to="contact" spy={true} smooth={true}>
               <KeyboardArrowDownOutlinedIcon
                 className="intro-down-arrow"
                 style={{ fontSize: "7em" }}

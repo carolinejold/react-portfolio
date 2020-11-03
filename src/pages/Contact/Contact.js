@@ -72,7 +72,7 @@ const Contact = () => {
         </Container>
         <section style={{ textAlign: "center", paddingBottom: "2em" }}>
           <Jump>
-            <Link to="intro">
+            <Link to="intro" spy={true} smooth={true}>
               <KeyboardArrowUpOutlinedIcon
                 className="intro-down-arrow"
                 style={{ fontSize: "7em", paddingTop: "2em" }}

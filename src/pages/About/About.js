@@ -84,7 +84,7 @@ const About = () => {
 
       <section style={{ textAlign: "center" }}>
         <Jump>
-          <Link to="timeline">
+          <Link to="timeline" spy={true} smooth={true}>
             <KeyboardArrowDownOutlinedIcon
               className="intro-down-arrow"
               style={{ fontSize: "7em" }}

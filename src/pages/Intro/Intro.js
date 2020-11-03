@@ -39,13 +39,13 @@ const Intro = () => {
             <h1>Hi, I'm Caroline Old</h1>
             <br></br>
             <h3>
-              Full-stack JavaScript developer with a passion for
-              front-end web development
+              Full-stack JavaScript developer with a passion for front-end web
+              development
             </h3>
             <br></br>
             <h3>Want to learn more?</h3>
             <Jump>
-              <Link to="about">
+              <Link to="about" spy={true} smooth={true}>
                 <KeyboardArrowDownOutlinedIcon
                   className="intro-down-arrow"
                   style={{ fontSize: "7em" }}
