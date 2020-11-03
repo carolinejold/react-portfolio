@@ -74,12 +74,12 @@ const Contact = () => {
             </a>
           </Fade>
         </Container>
-        <section style={{ textAlign: "center", paddingBottom: "2em" }}>
+        <section style={{ textAlign: "center"}}>
           <Jump>
             <Link to="intro" spy={true} smooth={true}>
               <KeyboardArrowUpOutlinedIcon
                 className="intro-down-arrow"
-                style={{ fontSize: "7em", paddingTop: "2em" }}
+                style={{ fontSize: "7em", paddingTop: "3.2em" }}
               />
             </Link>
           </Jump>
