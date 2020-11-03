@@ -35,7 +35,6 @@
   border-radius: 16px;
   border: 5px solid white;
   filter: saturate(-4);
-  background-color: red;
 }
 
 .about-text {
@@ -47,6 +46,16 @@
   padding: 1.5em;
   margin-bottom: 1em;
   max-width: 20em;
+}
+
+@media only screen and (min-width: 500px) {
+  .about-text {
+    max-width: 28em;
+  }
+
+  .about-image {
+    max-width: 30em;
+  }
 }
 
 @media only screen and (min-width: 800px) {
@@ -66,7 +75,8 @@
   .about-text {
     margin-bottom: 0em;
     max-width: 32em;
-
+    max-height: 33em;
+    overflow: scroll;
   }
 
   .about-image {
