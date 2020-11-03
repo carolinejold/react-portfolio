@@ -10,14 +10,18 @@ import Fade from "react-reveal/Fade";
 
 const styles = {
   component: {
+    // backgroundColor: "rgb(235, 236, 232)",
+    backgroundImage:
+      'url("https://images.pexels.com/photos/532566/pexels-photo-532566.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")',
+    backgroundRepeat: "no-repeat",
     height: "100vh",
-    backgroundColor: "rgb(235, 236, 232)",
+    backgroundPosition: "center",
+    backgroundSize: "cover",
   },
   header: {
     paddingTop: "1em",
     textAlign: "center",
     fontFamily: "Playfair Display, serif",
-
   },
   container: {
     display: "grid",
