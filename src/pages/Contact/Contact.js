@@ -25,7 +25,7 @@ const styles = {
   },
   container: {
     display: "grid",
-    gridTemplateColumns: "auto",
+    gridTemplateColumns: "auto auto auto",
     gridGap: "1em",
     justifyContent: "center",
     alignItems: "center",
