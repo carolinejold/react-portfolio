@@ -12,6 +12,7 @@ import Fade from "react-reveal/Fade";
 const styles = {
   component: {
     backgroundColor: "rgb(235, 236, 232)",
+    minHeight: "100vh",
   },
   header: {
     padding: "1em 0em 1em 0em",

@@ -17,6 +17,8 @@ const styles = {
   component: {
     backgroundColor: "rgb(235, 236, 232)",
     padding: "1em 0em 3em 0em",
+    minHeight: "100vh",
+
   },
   paragraph: {
     fontWeight: "300",

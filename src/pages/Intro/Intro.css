@@ -1,0 +1,14 @@
+.intro-container {
+  max-width: 18em;
+}
+
+.intro-down-arrow:hover {
+  cursor: pointer;
+  color: grey;
+}
+
+@media only screen and (min-width: 800px) {
+    .intro-container {
+      max-width: 25em;
+    }
+}

@@ -14,7 +14,7 @@ const styles = {
     backgroundImage:
       'url("https://images.pexels.com/photos/532566/pexels-photo-532566.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")',
     backgroundRepeat: "no-repeat",
-    height: "100vh",
+    minHeight: "100vh",
     backgroundPosition: "center",
     backgroundSize: "cover",
   },

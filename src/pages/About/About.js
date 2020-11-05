@@ -35,6 +35,7 @@ const About = () => {
                 marketing
               </p>
               <br></br>
+              <br></br>
               <p>Passionate about Front-End Development.</p>
               <br></br>
               <p>
@@ -46,17 +47,12 @@ const About = () => {
                 .
               </p>
               <br></br>
-              <p>
-                JavaScript | ReactJS | HTML5 | CSS3 | REST | HTTP/JSON/AJAX |
-                jQuery | ExpressJS | Node.js | MongoDB | Redux | Git | Netlify |
-                VSCode | TDD: Mocha/Jest | Mob Programming | Agile, Scrum &
-                Remote Work Methods | Native English Speaker
-              </p>
               <br></br>
               <p>
                 Recently graduated from School of Applied Technology's highly
                 intensive software development bootcamp.
               </p>
+              <br></br>
               <br></br>
               <p>
                 <i>
@@ -66,6 +62,7 @@ const About = () => {
                 </i>
               </p>
               <br></br>
+              <br></br>
               <p>
                 <i>
                   'Caroline has impressed the rest of the team with the rapid
@@ -73,6 +70,7 @@ const About = () => {
                   her native tongue'
                 </i>
               </p>
+              <br></br>
               <br></br>
             </section>
             <section>
@@ -84,7 +82,7 @@ const About = () => {
 
       <section style={{ textAlign: "center" }}>
         <Jump>
-          <Link to="timeline" spy={true} smooth={true}>
+          <Link to="tech-skills" spy={true} smooth={true}>
             <KeyboardArrowDownOutlinedIcon
               className="intro-down-arrow"
               style={{ fontSize: "7em" }}

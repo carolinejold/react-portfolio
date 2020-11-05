@@ -6,19 +6,6 @@
   font-weight: 300;
 }
 
-.intro-container {
-  max-width: 18em;
-}
-
-.intro-down-arrow {
-  font-size: 13em;
-}
-
-.intro-down-arrow:hover {
-  cursor: pointer;
-  color: grey;
-}
-
 .contact-links:hover {
   color: "grey";
 }
@@ -59,10 +46,6 @@
 }
 
 @media only screen and (min-width: 800px) {
-  .intro-container {
-    max-width: 25em;
-  }
-
   .about-container {
     display: grid;
     grid-template-columns: auto auto;
@@ -83,13 +66,3 @@
     max-width: 27em;
   }
 }
-
-/* @media only screen and (min-width: 700px) {
-  .about-container {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 1em;
-    border-radius: 16px;
-    max-width: 65em;
-  }
-} */
