@@ -36,15 +36,13 @@ const About = () => {
               </p>
               <br></br>
               <br></br>
-              <p>Passionate about Front-End Development.</p>
-              <br></br>
               <p>
                 Full-Stack Javascript Developer with 
                 <i>
                   'fantastic enthusiasm and a natural eye for all things
                   digital'
                 </i>
-                .
+                . Passionate about Front-End Development.
               </p>
               <br></br>
               <br></br>

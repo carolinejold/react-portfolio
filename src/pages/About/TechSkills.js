@@ -52,14 +52,20 @@ const TechSkills = () => {
       <Container maxWidth="lg" style={styles.container}>
         <Fade>
           <section style={styles.card}>
+            <h2 style={styles.titles}>Languages</h2>
+            <p style={styles.text}>
+              <p>JavaScript</p>
+              <p>TypeScript</p>
+            </p>
+          </section>
+          <section style={styles.card}>
             <h2 style={styles.titles}>Front End</h2>
             <p style={styles.text}>
-            <p>JavaScript</p>
-              <p>TypeScript</p>
               <p>ReactJS</p>
               <p>Redux</p>
               <p>HTML5</p>
-              <p>CSS3</p>
+              <p>CSS3/SASS</p>
+              <p>Bootstrap/MaterialUI</p>
             </p>
           </section>
           <section style={styles.card}>
@@ -67,6 +73,7 @@ const TechSkills = () => {
             <p style={styles.text}>
               <p>Node.js</p>
               <p>ExpressJS</p>
+              <p>HTTP/JSON/AJAX</p>
               <p>MongoDB</p>
               <p>Websockets</p>
               <p>REST</p>
