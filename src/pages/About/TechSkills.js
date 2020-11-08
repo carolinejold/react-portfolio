@@ -54,21 +54,22 @@ const TechSkills = () => {
           <section style={styles.card}>
             <h2 style={styles.titles}>Front End</h2>
             <p style={styles.text}>
-              <p>JavaScript</p>
+            <p>JavaScript</p>
+              <p>TypeScript</p>
               <p>ReactJS</p>
               <p>Redux</p>
               <p>HTML5</p>
               <p>CSS3</p>
-              <p>JQuery</p>
             </p>
           </section>
           <section style={styles.card}>
             <h2 style={styles.titles}>Back End</h2>
             <p style={styles.text}>
-              <p>Git</p>
               <p>Node.js</p>
               <p>ExpressJS</p>
               <p>MongoDB</p>
+              <p>Websockets</p>
+              <p>REST</p>
             </p>
           </section>
           <section style={styles.card}>
