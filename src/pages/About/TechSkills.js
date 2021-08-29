@@ -20,7 +20,7 @@ const styles = {
     flexFlow: "row wrap",
     justifyContent: "center",
     alignItems: "center",
-    maxWidth: "70em",
+    maxWidth: "50em",
   },
   card: {
     width: "15em",
@@ -33,7 +33,7 @@ const styles = {
     border: '1px solid rgb("240, 240, 240")',
     borderRadius: "16px",
     margin: "1em",
-    padding: "3em 0.5em 0em 0.5em",
+    padding: "1.5em 0.5em 1em 0.5em",
     backgroundColor: "white",
   },
   titles: {
@@ -62,6 +62,7 @@ const TechSkills = () => {
             <h2 style={styles.titles}>Front End</h2>
             <p style={styles.text}>
               <p>ReactJS</p>
+              <p>GatsbyJS</p>
               <p>Redux</p>
               <p>HTML5</p>
               <p>CSS3/SASS</p>
@@ -73,10 +74,10 @@ const TechSkills = () => {
             <p style={styles.text}>
               <p>Node.js</p>
               <p>ExpressJS</p>
+              <p>REST/GraphQL</p>
               <p>HTTP/JSON/AJAX</p>
               <p>MongoDB</p>
-              <p>Websockets</p>
-              <p>REST</p>
+              <p>Socket.io</p>
             </p>
           </section>
           <section style={styles.card}>
@@ -85,6 +86,7 @@ const TechSkills = () => {
               <p>Git</p>
               <p>Netlify</p>
               <p>Mocha/Jest</p>
+              <p>Cypress</p>
               <p>Mob Programming</p>
               <p>Agile, Scrum & Remote Work Methods</p>
             </p>
