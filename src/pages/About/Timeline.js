@@ -18,7 +18,6 @@ const styles = {
     backgroundColor: "rgb(235, 236, 232)",
     padding: "1em 0em 3em 0em",
     minHeight: "100vh",
-
   },
   paragraph: {
     fontWeight: "300",
@@ -71,13 +70,15 @@ const Timeline = () => {
             iconStyle={{ background: "rgb(240, 240, 240)", color: "black" }}
             icon={<WorkOutlineIcon />}
           >
-            <h3 style={styles.subtitles}>The LEGO Group</h3>
+            <h3 style={styles.subtitles}>
+              Digital Marketing Executive: The LEGO Group
+            </h3>
             <h4>London, UK</h4>
             <p style={styles.paragraph}>
               Digital Marketing Executive, Brand Marketing Executive.<br></br>
               Worked on all areas of digital marketing strategy for UK/I.
               <br></br>
-              Skills include: SEO, PPC, Analytics, Marketing, UX/UI
+              Skills include: SEO, PPC, UX/UI, Analytics, Marketing, Design
             </p>
             <br></br>
             <small>2018-2019</small>
@@ -88,10 +89,12 @@ const Timeline = () => {
             iconStyle={{ background: "rgb(240, 240, 240)", color: "black" }}
             icon={<CodeIcon />}
           >
-            <h3 style={styles.subtitles}>Full Stack JavaScript Developer</h3>
-            <h4>Stockholm, Sweden</h4>
+            <h3 style={styles.subtitles}>
+              Full Stack JavaScript Developer: School of Applied Technology
+            </h3>
+            <h4>Stockholm, Sweden / Remote</h4>
             <p style={styles.paragraph}>
-              From over 1500 applicants, I am one of 24 students selected to
+              From over 1500 applicants, I was one of 24 students selected to
               partake in an intensive Full Stack JavaScript Developer training
               program. Skills include JavaScript, React, Node.js, Express,
               HTML5, CSS3, Databases incl MongoDB, UX/UI, Git, Presenting, TDD,
@@ -107,15 +110,32 @@ const Timeline = () => {
             icon={<CodeIcon />}
           >
             <h3 style={styles.subtitles}>
-              Open to Software Development Opportunities...
+              Front End Software Engineer: Lendo AB
             </h3>
-            <h4>Stockholm, Sweden</h4>
+            <h4>Stockholm, Sweden / Remote</h4>
             <p style={styles.paragraph}>
-              Will your company be next on my timeline...? <br></br>
-              (Front End/Full Stack, via <a href="https://salt.dev/">salt</a>)
+              Working with all aspects of Front End Development. <br></br>Tech
+              stack includes: JavaScript, TypeScript, ReactJS, Gatsby, Next.js,
+              GraphQL, SCSS, HTML, Jest, Cypress, Travis.<br></br>Voluntary
+              Communications Officer for the Hand In Hand Charity Initiative,
+              helping women to start and maintain their own businesses in Kenya.
             </p>
             <br></br>
-            <small>2020-present</small>
+            <small>2021-present</small>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            contentStyle={styles.element}
+            contentArrowStyle={{ borderRight: "7px solid  rgb(255, 255, 255)" }}
+            iconStyle={{ background: "rgb(240, 240, 240)", color: "black" }}
+            icon={<CodeIcon />}
+          >
+            <h3 style={styles.subtitles}>Open to future opportunities...</h3>
+            <h4>Remote</h4>
+            <p style={styles.paragraph}>
+              Will your company be next on my timeline...? <br></br>
+            </p>
+            <br></br>
+            <small>---</small>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             iconStyle={{ background: "rgb(240, 240, 240)", color: "black" }}
