@@ -5,7 +5,6 @@ import KeyboardArrowDownOutlinedIcon from "@material-ui/icons/KeyboardArrowDownO
 import Fade from "react-reveal/Fade";
 import "./Intro.css";
 
-
 const styles = {
   component: {
     height: "100vh",
@@ -19,7 +18,7 @@ const styles = {
   },
   padding: {
     padding: "15em 0em 0em 13%",
-  }
+  },
 };
 
 const Intro = () => {
@@ -31,8 +30,8 @@ const Intro = () => {
             <h1>Hi, I'm Caroline Old</h1>
             <br></br>
             <h3>
-              Full-stack JavaScript developer with a passion for front-end web
-              development
+              Front End Software Developer with a passion for blockchain
+              technology
             </h3>
             <br></br>
             <h3>Want to learn more?</h3>
