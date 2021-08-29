@@ -28,27 +28,30 @@ const About = () => {
             <section className="about-text">
               <h1 style={styles.header}>About</h1>
               <br></br>
-              <p>26. Scottish. Stockholm</p>
-              <br></br>
               <p>
-                Graduated with Law LLB (Hons) degree, background in digital
-                marketing
-              </p>
-              <br></br>
-              <br></br>
-              <p>
-                Full-Stack Javascript Developer with 
+                Front End Software Developer with 
                 <i>
                   'fantastic enthusiasm and a natural eye for all things
                   digital'
                 </i>
-                . Passionate about Front-End Development.
+                .<br></br>
+                <br></br>Passionate about blockchain technology & smart
+                contracts.
               </p>
+
+              <br></br>
+              <p>27. She/Her. Scottish. Stockholm/Remote.</p>
               <br></br>
               <br></br>
               <p>
-                Recently graduated from School of Applied Technology's highly
-                intensive software development bootcamp.
+                Graduated with Law LLB (Hons) degree, background in digital &
+                brand marketing at LEGO.
+              </p>
+              <br></br>
+              <p>
+                Graduated from School of Applied Technology's highly intensive
+                Full Stack Software Development bootcamp & currently working at
+                a fintech company.
               </p>
               <br></br>
               <br></br>
@@ -59,7 +62,6 @@ const About = () => {
                   quality standards for herself as well as others'
                 </i>
               </p>
-              <br></br>
               <br></br>
               <p>
                 <i>
