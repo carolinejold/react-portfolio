@@ -6,23 +6,22 @@ const useProjects = () => {
   useEffect(() => {
     axios({
       url: "https://api.github.com/users/carolinejold/repos?sort=updated",
-      method: "get"
-    //   headers: {
-    //     Accept: "application/vnd.github.nebula-preview+json",
-    //   },
+      method: "get",
+      //   headers: {
+      //     Accept: "application/vnd.github.nebula-preview+json",
+      //   },
     })
       .then((response) => {
-        response.data.map((project) => {
+        response.data.map((el) => {
           const newProject = {
-            name: project.name,
-            description: project.description,
-            url: project.html_url,
-            homepage: project.homepage,
-            created_at: project.created_at,
-            language: project.language,
+            name: el.name,
+            description: el.description,
+            url: el.html_url,
+            homepage: el.homepage,
+            created_at: el.created_at,
+            language: el.language,
           };
           setProjects((projects) => [...projects, newProject]);
-          return null;
         });
       })
       .catch((err) => {
@@ -31,6 +30,6 @@ const useProjects = () => {
   }, []);
 
   return projects;
-}
+};
 
 export default useProjects;
