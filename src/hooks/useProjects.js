@@ -22,6 +22,7 @@ const useProjects = () => {
             language: el.language,
           };
           setProjects((projects) => [...projects, newProject]);
+          return null;
         });
       })
       .catch((err) => {
